@@ -20,12 +20,10 @@
             <![endif]-->
 
             <form action="#" onsubmit="update();return false">
-                <p>
-                    <label for="plain">Password:</label><br>
-                    <input type="text" id="plain" onchange="update()" onkeyup="update()" onclick="update()" onfocus="update()" style="color:black;background:white" data-cip-id="plain"><br>
-                    <label for="crypted">Tripcode:</label><br>
-                    <input type="text" id="crypted" readonly="readonly" style="color:black;background:white" data-cip-id="crypted"><br>
-                </p>
+                <label for="plain">Password:</label><br>
+                <input type="text" id="default" onchange="update()" onkeyup="update()" onclick="update()" onfocus="update()">
+                <label for="crypted">Tripcode:</label>
+                <input type="text" id="crypted" readonly="readonly">
             </form>
         </div>
 
