@@ -15,16 +15,18 @@
     </head>
     <body>
         <div class="row">
-            <!--[if lt IE 7]>
-                <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-            <![endif]-->
+            <div class="column_4 padding-top">
+                <!--[if lt IE 7]>
+                    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+                <![endif]-->
 
-            <form action="#" onsubmit="update();return false">
-                <label>Password:</label>
-                <input id="password" type="text" onchange="update()" onkeyup="update()" onclick="update()" onfocus="update()">
-                <label>Tripcode:</label>
-                <input id="crypted" type="text" readonly="readonly">
-            </form>
+                <form action="#" onsubmit="update();return false">
+                    <label>Password:</label>
+                    <input id="password" type="text" maxlength="8" onchange="update()" onkeyup="update()" onclick="update()" onfocus="update()">
+                    <label>Tripcode:</label>
+                    <input id="crypted" type="text" readonly="readonly">
+                </form>
+            </div>
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
