@@ -20,10 +20,10 @@
             <![endif]-->
 
             <form action="#" onsubmit="update();return false">
-                <label for="plain">Password:</label><br>
-                <input type="text" id="default" onchange="update()" onkeyup="update()" onclick="update()" onfocus="update()">
-                <label for="crypted">Tripcode:</label>
-                <input type="text" id="crypted" readonly="readonly">
+                <label>Password:</label>
+                <input id="password" type="text" onchange="update()" onkeyup="update()" onclick="update()" onfocus="update()">
+                <label>Tripcode:</label>
+                <input id="crypted" type="text" readonly="readonly">
             </form>
         </div>
 
@@ -32,7 +32,7 @@
         <script src="js/tripcode.min.js"></script>
         <script>
           function update() {
-            var key = document.getElementById('plain').value;
+            var key = document.getElementById('password').value;
             document.getElementById('crypted').value = tripcode(key);
           }
         </script>
