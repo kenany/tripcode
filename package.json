@@ -24,7 +24,7 @@
     "test": "tape test/index.js"
   },
   "dependencies": {
-    "he": "~0.3.6",
+    "he": "~0.3.0",
     "utf8": "~2.0.0"
   },
   "devDependencies": {
