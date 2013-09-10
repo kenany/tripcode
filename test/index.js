@@ -10,6 +10,7 @@ test('basic characters', function(t) {
   t.equal(tripcode('UU_,TW_+'), '.uIf/izs/E');
 });
 
+// 4chan actually strips symbols like these.
 test('utf8 symbols', function(t) {
   t.plan(1);
   t.equal(tripcode('©'), 'AXcG6m9g5c');
