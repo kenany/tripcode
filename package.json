@@ -32,6 +32,6 @@
     "graceful-fs": "~2.0.0",
     "hyperquest": "~0.1.0",
     "lodash.forown": "~2.0.0",
-    "tape": "~1.0.0"
+    "tape": "~1.1.0"
   }
 }
