@@ -1,13 +1,14 @@
 var tripcode = require('../');
+var forOwn  = require('lodash.forown');
 var test = require('tape');
 
+var tripcodes = require('./tripcodes.json');
+
 test('basic characters', function(t) {
-  t.plan(5);
-  t.equal(tripcode('z$}yh}k@'), 'qJ2J/izs/Q');
-  t.equal(tripcode('R}:gbrCg'), '/izs/F2ZEQ');
-  t.equal(tripcode(',JFKr~CD'), 'ZZ3q/izs/s');
-  t.equal(tripcode('f}EAmbA%'), '/izs/14Iuw');
-  t.equal(tripcode('UU_,TW_+'), '.uIf/izs/E');
+  forOwn(tripcodes, function(value, key) {
+    t.equal(tripcode(key), value);
+  });
+  t.end();
 });
 
 test('characters that are escaped', function(t) {

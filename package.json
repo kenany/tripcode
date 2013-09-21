@@ -28,6 +28,10 @@
     "utf8": "~2.0.0"
   },
   "devDependencies": {
-    "tape": "~1.0.4"
+    "concat-stream": "~1.0.0",
+    "graceful-fs": "~2.0.0",
+    "hyperquest": "~0.1.0",
+    "lodash.forown": "~2.0.0",
+    "tape": "~1.0.0"
   }
 }
