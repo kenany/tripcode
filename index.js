@@ -1,5 +1,4 @@
 var he = require('he');
-var utf8 = require('utf8');
 var crypt = require('./lib/crypt');
 var sjisconv = require('./lib/sjisconv');
 
