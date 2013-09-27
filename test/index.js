@@ -1,5 +1,6 @@
 var tripcode = require('../');
 var forOwn  = require('lodash.forown');
+var utf8 = require('utf8');
 var test = require('tape');
 
 var tripcodes = require('./tripcodes.json');
@@ -20,4 +21,9 @@ test('characters that are escaped', function(t) {
 test('utf8 symbols', function(t) {
   t.plan(1);
   t.equal(tripcode('©'), 'AXcG6m9g5c');
+});
+
+test('collisions, oh my!', function(t) {
+  t.plan(1);
+  t.equal(tripcode('fa'), tripcode(utf8.decode('\xE8\xA8\x9B')));
 });
