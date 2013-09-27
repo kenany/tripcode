@@ -17,13 +17,18 @@ test('characters that are escaped', function(t) {
   t.equal(tripcode('&<>"\''), 'CgqvGaJbDQ');
 });
 
-// 4chan actually strips symbols like these.
+// 4chan strips utf8
 test('utf8 symbols', function(t) {
   t.plan(1);
-  t.equal(tripcode('©'), 'AXcG6m9g5c');
+  t.equal(tripcode('©'), '');
 });
 
 test('collisions, oh my!', function(t) {
   t.plan(1);
+
+  // U+8A1B CJK UNIFIED IDEOGRAPH-8A1B
+  // http://codepoints.net/U+8A1B
+  //
+  // !c8eDXvwFLQ
   t.equal(tripcode('fa'), tripcode(utf8.decode('\xE8\xA8\x9B')));
 });
