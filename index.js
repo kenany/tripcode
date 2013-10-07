@@ -24,8 +24,9 @@ module.exports = function(key) {
   if (!key.length) return '';
 
   var salt = '';
-  for (var i = 1; i < 3; i++) {
-    salt += SALT_TABLE[(key + 'H.').charCodeAt(i) % 256];
+  var index = 0;
+  while (index++ < 2) {
+    salt += SALT_TABLE[(key + 'H.').charCodeAt(index) % 256];
   }
 
   return crypt(key, salt).substring(3);
