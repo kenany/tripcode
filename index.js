@@ -9,8 +9,10 @@ var SALT_TABLE = '.............................................../0123456789A' +
 
 function sjis(str) {
   var encoded = '';
-  for (var i = 0; i < str.length; i++) {
-    var character = sjisconv[String.fromCharCode(str.charCodeAt(i))];
+  var index = -1;
+  var length = str.length;
+  while (index++ < length) {
+    var character = sjisconv[String.fromCharCode(str.charCodeAt(index))];
     if (character) encoded += character;
   }
   return encoded;
