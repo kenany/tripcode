@@ -9,28 +9,33 @@
   "bugs": {
     "url": "https://github.com/KenanY/tripcode/issues"
   },
+  "repository": "git://github.com/KenanY/tripcode.git",
   "license": "MIT",
   "author": {
     "name": "Kenan Yildirim",
     "email": "kenan@kenany.me",
     "web": "http://kenany.me/"
   },
+  "bin": {
+    "tripcode": "bin/cmd.js"
+  },
   "main": "./index.js",
   "directories": {
     "test": "./test"
   },
-  "repository": "git://github.com/KenanY/tripcode.git",
   "scripts": {
     "test": "tape test/index.js"
   },
   "dependencies": {
-    "he": "~0.3.0"
+    "concat-stream": "~1.0",
+    "he": "~0.3.0",
+    "optimist": "~0.6.0",
+    "lodash.foreach": "~2.0"
   },
   "devDependencies": {
-    "concat-stream": "~1.0",
     "graceful-fs": "~2.0",
     "hyperquest": "~0.1.0",
-    "lodash.forown": "~2.2.0",
+    "lodash.forown": "~2.2",
     "tape": "~2.0",
     "utf8": "~2.0"
   }
