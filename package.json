@@ -27,11 +27,11 @@
     "he": "~0.3.0"
   },
   "devDependencies": {
-    "concat-stream": "~1.0.0",
-    "graceful-fs": "~2.0.0",
+    "concat-stream": "~1.0",
+    "graceful-fs": "~2.0",
     "hyperquest": "~0.1.0",
     "lodash.forown": "~2.2.0",
     "tape": "~2.0",
-    "utf8": "~2.0.0"
+    "utf8": "~2.0"
   }
 }
