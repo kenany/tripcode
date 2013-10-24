@@ -7,7 +7,7 @@ var forEach = require('lodash.foreach');
 
 function tripify() {
   forEach(argv._, function(value) {
-    console.log('#' + value + ' => !' + tripcode(value));
+    process.stdout.write('#' + value + ' => !' + tripcode(value) + '\n');
   });
 }
 
