@@ -20,8 +20,10 @@ if (argv._.length < 1) {
     tripify();
   });
 
-  var stdin = process.openStdin();
-  stdin.pipe(finish);
+  // The stdin stream is paused by default
+  process.stdin.resume();
+  process.stdin.setEncoding('utf8');
+  process.stdin.pipe(finish);
 }
 else {
   tripify();
