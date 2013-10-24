@@ -31,7 +31,7 @@ github
 is
 cool
 
-$ tripcode < test.txt
+$ tripcode < codes.txt
 #github => !lLf/rxkwgg
 #is => !4CEimo5sKs
 #cool => !QkO1sgFXdY
