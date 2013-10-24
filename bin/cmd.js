@@ -11,7 +11,8 @@ function tripify() {
   });
 }
 
-if (argv._.length < 1) {
+// Something is being piped in.
+if (!process.stdin.isTTY) {
   var finish = concat(function(data) {
     var lines = data.toString().split('\n');
     lines.forEach(function(line) {
@@ -20,11 +21,13 @@ if (argv._.length < 1) {
     tripify();
   });
 
-  // The stdin stream is paused by default
+  // The stdin stream is paused by default.
   process.stdin.resume();
   process.stdin.setEncoding('utf8');
   process.stdin.pipe(finish);
 }
+
+// Password(s) passed as argument(s).
 else {
   tripify();
 }
