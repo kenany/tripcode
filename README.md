@@ -37,6 +37,13 @@ $ tripcode < codes.txt
 #cool => !QkO1sgFXdY
 ```
 
+Or pipe out the tripcodes to `grep` or something to find specific tripcodes!
+
+``` bash
+$ tripcode < /usr/share/dict/words | grep -E '(/AhWyw3toI)'
+#incognito => !/AhWyw3toI
+```
+
 ## Installation
 
 ``` bash
