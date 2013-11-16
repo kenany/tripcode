@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "concat-stream": "~1",
-    "he": "~0.3.6",
+    "he": "^0.3.6",
     "optimist": "~0.6.0",
     "lodash.foreach": "~2"
   },
