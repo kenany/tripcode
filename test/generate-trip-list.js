@@ -1,15 +1,21 @@
 var concat = require('concat-stream');
 var fs = require('graceful-fs');
-var hyperquest = require('hyperquest');
+var forEach = require('lodash.foreach');
 
-var write = concat(function(data) {
-  var result = {};
-  var lines = data.toString().split('\n');
-  lines.forEach(function(line) {
-    var pair = line.split('!');
-    if (pair[3]) result[pair[0]] = pair[1];
+module.exports = function(callback) {
+  var write = concat(function(data) {
+    var trips = [];
+
+    var lines = data.toString().split('\n');
+    forEach(lines, function(line) {
+      var pair = line.split('!');
+      if (pair[3]) {
+        trips.push([pair[0], pair[1]]);
+      }
+    });
+
+    callback(null, trips);
   });
-  fs.writeFileSync('tripcodes.json', JSON.stringify(result));
-});
-
-hyperquest('http://www.pageoftext.com/PH_plain&nm_page=secure_tripcode_dictionary').pipe(write);
+  var quest = fs.createReadStream(__dirname + '/fixtures/tripcodes.txt');
+  quest.pipe(write);
+};

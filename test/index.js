@@ -1,15 +1,23 @@
 var tripcode = require('../');
-var forOwn  = require('lodash.forown');
+var forEach = require('lodash.foreach');
+var size  = require('lodash.size');
 var utf8 = require('utf8');
 var test = require('tape');
 
-var tripcodes = require('./tripcodes.json');
+var generateTripList = require('./generate-trip-list');
 
 test('basic characters', function(t) {
-  forOwn(tripcodes, function(value, key) {
-    t.equal(tripcode(key), value);
+  generateTripList(function(error, tripcodes) {
+    if (error) throw error;
+
+    t.plan(size(tripcodes));
+
+    forEach(tripcodes, function(trip) {
+      t.equal(tripcode(trip[0]), trip[1]);
+    });
+
+    t.end();
   });
-  t.end();
 });
 
 test('characters that are escaped', function(t) {
