@@ -27,16 +27,16 @@
     "test": "tape test/index.js"
   },
   "dependencies": {
-    "concat-stream": "~1",
+    "concat-stream": "^1.2.0",
     "he": "^0.3.6",
-    "optimist": "~0.6.0",
-    "lodash.foreach": "~2"
+    "optimist": "^0.6.0",
+    "lodash.foreach": "^2.3.0"
   },
   "devDependencies": {
-    "graceful-fs": "~2",
-    "lodash.foreach": "~2",
-    "lodash.size": "~2",
-    "tape": "~2",
-    "utf8": "~2"
+    "graceful-fs": "^2.0.1",
+    "lodash.foreach": "^2.3.0",
+    "lodash.size": "^2.3.0",
+    "tape": "^2.1.0",
+    "utf8": "^2.0.0"
   }
 }
