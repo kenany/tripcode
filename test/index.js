@@ -6,7 +6,7 @@ var test = require('tape');
 
 var generateTripList = require('./generate-trip-list');
 
-test('\nbasic characters', function(t) {
+test('huge list of tripcodes', function(t) {
   generateTripList(function(error, tripcodes) {
     if (error) throw error;
 
@@ -20,30 +20,52 @@ test('\nbasic characters', function(t) {
   });
 });
 
-test('\ncharacters that are escaped', function(t) {
-  var ESCAPE_TEST = [
+test('anything not alphanumeric', function(t) {
+  var SYMBOLS = [
+    ['!', 'KNs1o0VDv6'],
+    ['@', 'z0MWdctOjE'],
+    ['$', 'yflOPYrGcY'],
+    ['%', '1t98deumW.'],
+    ['^', 'gBeeWo4hQg'],
+
     ['&', 'MhCJJ7GVT.'],
+    ['*', 'o8gKYE6H8A'],
+    ['(', 'SGn2Wwr9CY'],
+    [')', 'E9k1wjKgHI'],
+    ['-', 'tHbGiobWdM'],
+
+    ['_', 'm3eoQIlU/U'],
+    ['=', 'wmxP/NHJxA'],
+    ['+', 'IHLbs/YhoA'],
+
     ['<', 'D1YGKrvmeg'],
     ['>', 'afqVxck0Ts'],
     ['"', 'gt1azVccY2'],
-    // ['\'', '8/08awL.AE'],
-    ['&<>"\'', 'CgqvGaJbDQ']
+    ['\'', '8/08awL.AE'],
+    ['&<>"\'', 'CgqvGaJbDQ'],
+    [' ', 'wqLZLRuzPQ']
   ];
 
-  t.plan(ESCAPE_TEST.length);
+  t.plan(SYMBOLS.length);
 
-  forEach(ESCAPE_TEST, function(trip) {
+  forEach(SYMBOLS, function(trip) {
     t.equal(tripcode(trip[0]), trip[1]);
   });
 });
 
-// 4chan strips utf8
-test('\nutf8 symbols', function(t) {
-  t.plan(1);
-  t.equal(tripcode('©'), '');
+test('symbols that are ignored', function(t) {
+  var SYMBOLS = [
+    '©'
+  ];
+
+  t.plan(SYMBOLS.length);
+
+  forEach(SYMBOLS, function(trip) {
+    t.equal(tripcode(trip), '');
+  });
 });
 
-test('\ncollisions, oh my!', function(t) {
+test('collisions', function(t) {
   t.plan(1);
 
   // U+8A1B CJK UNIFIED IDEOGRAPH-8A1B
