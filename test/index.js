@@ -1,6 +1,5 @@
 var tripcode = require('../');
 var forEach = require('lodash.foreach');
-var size  = require('lodash.size');
 var utf8 = require('utf8');
 var test = require('tape');
 
