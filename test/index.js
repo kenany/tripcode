@@ -27,24 +27,35 @@ test('anything not alphanumeric', function(t) {
   var SYMBOLS = [
     ['!', 'KNs1o0VDv6'],
     ['@', 'z0MWdctOjE'],
+
+    // How?
+    ['#', 'u2YjtUz8MU'],
+
     ['$', 'yflOPYrGcY'],
     ['%', '1t98deumW.'],
     ['^', 'gBeeWo4hQg'],
-
     ['&', 'MhCJJ7GVT.'],
     ['*', 'o8gKYE6H8A'],
     ['(', 'SGn2Wwr9CY'],
     [')', 'E9k1wjKgHI'],
     ['-', 'tHbGiobWdM'],
-
     ['_', 'm3eoQIlU/U'],
     ['=', 'wmxP/NHJxA'],
     ['+', 'IHLbs/YhoA'],
-
+    ['[', '7h2f0/nQ3w'],
+    [']', 'rjM99frkZs'],
+    ['{', 'odBt7a7lv6'],
+    ['}', 'ATNP9hXHcg'],
+    [';', 'zglc7ct1Ls'],
+    [':', '.BmRMKOub2'],
+    ['\'', '8/08awL.AE'],
+    ['"', 'gt1azVccY2'],
     ['<', 'D1YGKrvmeg'],
     ['>', 'afqVxck0Ts'],
-    ['"', 'gt1azVccY2'],
-    ['\'', '8/08awL.AE'],
+    [',', 'YeQQgdCJE6'],
+    ['.', 'XONm83jaIU'],
+    ['\\', '9xUxYS2dlM'],
+    ['?', 'cPUZU5OGFs'],
     [' ', 'wqLZLRuzPQ']
   ];
 
