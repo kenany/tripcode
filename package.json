@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "concat-stream": "^1.2.0",
-    "optimist": "^0.6.0",
+    "minimist": "^0.0.7",
     "lodash.foreach": "^2.3.0"
   },
   "devDependencies": {

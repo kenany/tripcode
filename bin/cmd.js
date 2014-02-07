@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 
 var tripcode = require('../');
-var argv = require('optimist').argv;
+var argv = require('minimist')(process.argv.slice(2));
+
 var concat = require('concat-stream');
 var forEach = require('lodash.foreach');
 
