@@ -2,7 +2,6 @@
 
 var tripcode = require('../');
 var argv = require('minimist')(process.argv.slice(2));
-
 var concat = require('concat-stream');
 var forEach = require('lodash.foreach');
 
