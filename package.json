@@ -27,7 +27,7 @@
     "test": "tape test/index.js"
   },
   "dependencies": {
-    "concat-stream": "^1.2.0",
+    "split": "^0.3.0",
     "minimist": "^0.0.7",
     "lodash.foreach": "^2.3.0"
   },
