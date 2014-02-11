@@ -27,9 +27,9 @@
     "test": "tape test/index.js"
   },
   "dependencies": {
-    "split": "^0.3.0",
+    "lodash.foreach": "^2.3.0",
     "minimist": "^0.0.7",
-    "lodash.foreach": "^2.3.0"
+    "split": "^0.3.0"
   },
   "devDependencies": {
     "graceful-fs": "^2.0.1",
