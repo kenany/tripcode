@@ -32,6 +32,7 @@
     "split": "^0.3.0"
   },
   "devDependencies": {
+    "concat-stream": "^1.4.1",
     "graceful-fs": "^2.0.1",
     "tape": "^2.1.0",
     "utf8": "^2.0.0"
