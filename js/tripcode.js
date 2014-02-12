@@ -1,7 +1,7 @@
-!function(e){"object"==typeof exports?module.exports=e():"function"==typeof define&&define.amd?define(e):"undefined"!=typeof window?window.tripcode=e():"undefined"!=typeof global?global.tripcode=e():"undefined"!=typeof self&&(self.tripcode=e())}(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-var crypt = require('./lib/crypt');
-var htmlEscape = require('./lib/html-escape');
-var sjisconv = require('./lib/sjisconv');
+!function(e){if("object"==typeof exports)module.exports=e();else if("function"==typeof define&&define.amd)define(e);else{var f;"undefined"!=typeof window?f=window:"undefined"!=typeof global?f=global:"undefined"!=typeof self&&(f=self),f.tripcode=e()}}(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(_dereq_,module,exports){
+var crypt = _dereq_('./lib/crypt');
+var htmlEscape = _dereq_('./lib/html-escape');
+var sjisconv = _dereq_('./lib/sjisconv');
 
 var SALT_TABLE = '.............................................../0123456789A' +
   'BCDEFGABCDEFGHIJKLMNOPQRSTUVWXYZabcdefabcdefghijklmnopqrstuvwxyz..........' +
@@ -33,7 +33,7 @@ module.exports = function(key) {
 
   return crypt(key, salt).substring(3);
 };
-},{"./lib/crypt":2,"./lib/html-escape":3,"./lib/sjisconv":4}],2:[function(require,module,exports){
+},{"./lib/crypt":2,"./lib/html-escape":3,"./lib/sjisconv":4}],2:[function(_dereq_,module,exports){
 /**
  * Unix crypt(3) Javascript Implementation
  *
@@ -504,7 +504,7 @@ function crypt(pw, salt, returnBytes) {
 }
 
 module.exports = crypt;
-},{}],3:[function(require,module,exports){
+},{}],3:[function(_dereq_,module,exports){
 // HTML escape utility, but **without** the escaping of the single quote
 // character.
 //
@@ -525,7 +525,7 @@ module.exports = function(str) {
     return escapeMap[c];
   });
 }
-},{}],4:[function(require,module,exports){
+},{}],4:[function(_dereq_,module,exports){
 // These characters are the same in SJIS.
 var SAME_IN_SJIS = [
   ' ', '!', '"', '#', '$',
@@ -7504,4 +7504,3 @@ module.exports = sjisconv;
 },{}]},{},[1])
 (1)
 });
-;
