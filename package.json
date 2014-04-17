@@ -9,7 +9,7 @@
   "bugs": {
     "url": "https://github.com/KenanY/tripcode/issues"
   },
-  "repository": "git://github.com/KenanY/tripcode.git",
+  "repository": "KenanY/tripcode",
   "license": "MIT",
   "author": {
     "name": "Kenan Yildirim",
