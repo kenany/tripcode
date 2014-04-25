@@ -11,11 +11,7 @@
   },
   "repository": "KenanY/tripcode",
   "license": "MIT",
-  "author": {
-    "name": "Kenan Yildirim",
-    "email": "kenan@kenany.me",
-    "web": "http://kenany.me/"
-  },
+  "author": "Kenan Yildirim <kenan@kenany.me> (http://kenany.me/)",
   "bin": {
     "tripcode": "bin/cmd.js"
   },
