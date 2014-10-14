@@ -12,7 +12,7 @@ function sjis(str) {
   var index = -1;
   var length = str.length;
   while (++index < length) {
-    var character = sjisconv[String.fromCharCode(str.charCodeAt(index))];
+    var character = sjisconv[str.charAt(index)];
     if (character) encoded += character;
   }
   return encoded;
