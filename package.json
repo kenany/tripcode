@@ -25,7 +25,7 @@
   "dependencies": {
     "lodash.foreach": "^4.2.0",
     "minimist": "^1.1.0",
-    "split": "^0.3.0"
+    "split": "^1.0.0"
   },
   "devDependencies": {
     "concat-stream": "^1.4.1",
