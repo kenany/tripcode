@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "concat-stream": "^1.4.1",
-    "graceful-fs": "^2.0.1",
+    "graceful-fs": "^4.1.3",
     "tape": "^2.1.0",
     "utf8": "^2.0.0"
   }
