@@ -2,10 +2,10 @@ var crypt = require('./lib/crypt');
 var htmlEscape = require('./lib/html-escape');
 var sjisconv = require('./lib/sjisconv');
 
-var SALT_TABLE = '.............................................../0123456789A' +
-  'BCDEFGABCDEFGHIJKLMNOPQRSTUVWXYZabcdefabcdefghijklmnopqrstuvwxyz..........' +
-  '..........................................................................' +
-  '.................................................'.split('');
+var SALT_TABLE = '.............................................../0123456789A'
+  + 'BCDEFGABCDEFGHIJKLMNOPQRSTUVWXYZabcdefabcdefghijklmnopqrstuvwxyz..........'
+  + '..........................................................................'
+  + '.................................................'.split('');
 
 function sjis(str) {
   var encoded = '';

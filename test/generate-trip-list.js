@@ -1,6 +1,7 @@
 var concat = require('concat-stream');
 var fs = require('graceful-fs');
 var forEach = require('lodash.foreach');
+var path = require('path');
 
 module.exports = function(callback) {
   var write = concat(function(data) {
@@ -16,6 +17,7 @@ module.exports = function(callback) {
 
     callback(null, trips);
   });
-  var quest = fs.createReadStream(__dirname + '/fixtures/tripcodes.txt');
+  var quest = fs.createReadStream(path.resolve(__dirname,
+    './fixtures/tripcodes.txt'));
   quest.pipe(write);
 };
