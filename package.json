@@ -16,9 +16,11 @@
     "tripcode": "bin/cmd.js"
   },
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
+  "files": [
+    "bin",
+    "lib",
+    "index.js"
+  ],
   "scripts": {
     "lint": "eslint .",
     "pretest": "npm run -s lint",
