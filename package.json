@@ -32,7 +32,7 @@
     "split": "^1.0.0"
   },
   "devDependencies": {
-    "@kenan/eslint-config": "^4.0.0",
+    "@kenan/eslint-config": "^5.0.0",
     "concat-stream": "^1.4.1",
     "eslint": "^3.16.1",
     "graceful-fs": "^4.1.3",
