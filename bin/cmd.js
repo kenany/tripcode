@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 
-var tripcode = require('../');
 var argv = require('minimist')(process.argv.slice(2));
 var split = require('split');
 var forEach = require('lodash.foreach');
+
+var tripcode = require('../');
 
 function tripify(value) {
   process.stdout.write('#' + value + ' => !' + tripcode(value) + '\n');

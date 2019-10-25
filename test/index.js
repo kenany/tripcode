@@ -1,7 +1,8 @@
-var tripcode = require('../');
 var forEach = require('lodash.foreach');
 var utf8 = require('utf8');
 var test = require('tape');
+
+var tripcode = require('../');
 
 var generateTripList = require('./generate-trip-list');
 
