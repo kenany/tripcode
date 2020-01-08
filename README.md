@@ -1,7 +1,5 @@
 # tripcode
 
-[![Build Status](https://travis-ci.org/KenanY/tripcode.svg?branch=master)](https://travis-ci.org/KenanY/tripcode)
-
 JavaScript implementation of 4chan's tripcode algorithm.
 
 ## Example
