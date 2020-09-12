@@ -27,7 +27,7 @@
     "test": "tape test/index.js"
   },
   "dependencies": {
-    "lodash.foreach": "^4.2.0",
+    "lodash.foreach": "^4.5.0",
     "minimist": "^1.1.0",
     "split": "^1.0.0"
   },
