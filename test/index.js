@@ -88,3 +88,9 @@ test('collisions', function(t) {
   // !c8eDXvwFLQ
   t.equal(tripcode('fa'), tripcode(utf8.decode('\xE8\xA8\x9B')));
 });
+
+test('half width katakana', function(t) {
+  t.plan(1);
+
+  t.equal(tripcode('ﾐﾐ'), '8wihCLEUuc');
+});

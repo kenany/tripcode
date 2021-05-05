@@ -5,7 +5,7 @@ var sjisconv = require('./lib/sjisconv');
 var SALT_TABLE = '.............................................../0123456789A'
   + 'BCDEFGABCDEFGHIJKLMNOPQRSTUVWXYZabcdefabcdefghijklmnopqrstuvwxyz..........'
   + '..........................................................................'
-  + '.................................................'.split('');
+  + '.................................................';
 
 function sjis(str) {
   var encoded = '';
