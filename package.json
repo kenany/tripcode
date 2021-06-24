@@ -41,7 +41,7 @@
     "conventional-changelog-conventionalcommits": "^4.6.0",
     "eslint": "7.29.0",
     "graceful-fs": "4.2.6",
-    "semantic-release": "^17.4.2",
+    "semantic-release": "^17.4.4",
     "tape": "5.2.2",
     "utf8": "3.0.0"
   }
