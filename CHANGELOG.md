@@ -1,3 +1,10 @@
+## [1.4.0](https://github.com/KenanY/tripcode/compare/1.3.5...1.4.0) (2021-07-24)
+
+
+### Features
+
+* add typescript definitions ([66b0b87](https://github.com/KenanY/tripcode/commit/66b0b871d1a4d67cd7488a642292c772965ae802))
+
 ### [1.3.5](https://github.com/KenanY/tripcode/compare/1.3.4...1.3.5) (2021-05-10)
 
 
