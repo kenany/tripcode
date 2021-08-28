@@ -41,7 +41,7 @@
     "concat-stream": "2.0.0",
     "conventional-changelog-conventionalcommits": "^4.6.0",
     "eslint": "^7.32.0",
-    "graceful-fs": "4.2.6",
+    "graceful-fs": "^4.2.8",
     "semantic-release": "^17.4.4",
     "tape": "^5.3.1",
     "utf8": "3.0.0"
