@@ -36,13 +36,13 @@
   "devDependencies": {
     "@kenan/eslint-config": "^9.0.4",
     "@kenan/renovate-config": "^1.5.1",
-    "@semantic-release/changelog": "^5.0.1",
-    "@semantic-release/git": "^9.0.1",
+    "@semantic-release/changelog": "^6.0.0",
+    "@semantic-release/git": "^10.0.0",
     "concat-stream": "2.0.0",
     "conventional-changelog-conventionalcommits": "^4.6.1",
     "eslint": "^7.32.0",
     "graceful-fs": "^4.2.8",
-    "semantic-release": "^17.4.7",
+    "semantic-release": "^18.0.0",
     "tape": "^5.3.1",
     "utf8": "3.0.0"
   }
