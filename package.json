@@ -5,13 +5,13 @@
   "keywords": [
     "tripcode"
   ],
-  "homepage": "http://kenany.github.io/tripcode/",
+  "homepage": "https://kenany.github.io/tripcode/",
   "bugs": {
     "url": "https://github.com/KenanY/tripcode/issues"
   },
   "repository": "KenanY/tripcode",
   "license": "MIT",
-  "author": "Kenan Yildirim <kenan@kenany.me> (http://kenany.me/)",
+  "author": "Kenan Yildirim <kenan@kenany.me> (https://kenany.me/)",
   "bin": {
     "tripcode": "bin/cmd.js"
   },
@@ -22,6 +22,9 @@
     "lib",
     "index.js"
   ],
+  "engines": {
+    "node": "12 || 14 || >=16"
+  },
   "scripts": {
     "lint": "eslint .",
     "release": "semantic-release",
@@ -38,12 +41,12 @@
     "@kenan/renovate-config": "^1.5.1",
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/git": "^10.0.1",
-    "concat-stream": "2.0.0",
+    "concat-stream": "^2.0.0",
     "conventional-changelog-conventionalcommits": "^4.6.1",
     "eslint": "^7.32.0",
     "graceful-fs": "^4.2.8",
     "semantic-release": "^18.0.0",
     "tape": "^5.3.1",
-    "utf8": "3.0.0"
+    "utf8": "^3.0.0"
   }
 }

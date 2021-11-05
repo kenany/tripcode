@@ -1,10 +1,10 @@
-var forEach = require('lodash.foreach');
-var utf8 = require('utf8');
-var test = require('tape');
+const forEach = require('lodash.foreach');
+const utf8 = require('utf8');
+const test = require('tape');
 
-var tripcode = require('../');
+const tripcode = require('../');
 
-var generateTripList = require('./generate-trip-list');
+const generateTripList = require('./generate-trip-list');
 
 test('huge list of tripcodes (19233 assertions)', function(t) {
   generateTripList(function(error, tripcodes) {
@@ -12,10 +12,10 @@ test('huge list of tripcodes (19233 assertions)', function(t) {
 
     t.plan(1);
 
-    var failed = [];
+    let failed = [];
     forEach(tripcodes, function(trip) {
-      var actual = tripcode(trip[0]);
-      var expected = trip[1];
+      const actual = tripcode(trip[0]);
+      const expected = trip[1];
       failed = [actual, expected];
       return actual === expected;
     });
@@ -25,7 +25,7 @@ test('huge list of tripcodes (19233 assertions)', function(t) {
 });
 
 test('anything not alphanumeric', function(t) {
-  var SYMBOLS = [
+  const SYMBOLS = [
     ['!', 'KNs1o0VDv6'],
     ['@', 'z0MWdctOjE'],
 
@@ -68,7 +68,7 @@ test('anything not alphanumeric', function(t) {
 });
 
 test('symbols that are ignored', function(t) {
-  var SYMBOLS = [
+  const SYMBOLS = [
     '©'
   ];
 

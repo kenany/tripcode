@@ -1,15 +1,15 @@
-var concat = require('concat-stream');
-var fs = require('graceful-fs');
-var forEach = require('lodash.foreach');
-var path = require('path');
+const concat = require('concat-stream');
+const fs = require('graceful-fs');
+const forEach = require('lodash.foreach');
+const path = require('path');
 
 module.exports = function(callback) {
-  var write = concat(function(data) {
-    var trips = [];
+  const write = concat(function(data) {
+    const trips = [];
 
-    var lines = data.toString().split('\n');
+    const lines = data.toString().split('\n');
     forEach(lines, function(line) {
-      var pair = line.split('!');
+      const pair = line.split('!');
       if (pair[3]) {
         trips.push([pair[0], pair[1]]);
       }
@@ -17,7 +17,8 @@ module.exports = function(callback) {
 
     callback(null, trips);
   });
-  var quest = fs.createReadStream(path.resolve(__dirname,
-    './fixtures/tripcodes.txt'));
+  const quest = fs.createReadStream(
+    path.resolve(__dirname, './fixtures/tripcodes.txt')
+  );
   quest.pipe(write);
 };
