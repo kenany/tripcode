@@ -1,3 +1,14 @@
+## [2.0.0](https://github.com/KenanY/tripcode/compare/1.4.0...2.0.0) (2021-11-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* **ci:** Node.js v10 is no longer supported.
+
+### Features
+
+* **ci:** drop Node.js v10 support ([29b8b50](https://github.com/KenanY/tripcode/commit/29b8b50b8ad7082d27180a73b7b3b26d8a963a5d))
+
 ## [1.4.0](https://github.com/KenanY/tripcode/compare/1.3.5...1.4.0) (2021-07-24)
 
 
