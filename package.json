@@ -42,7 +42,7 @@
     "@semantic-release/git": "^10.0.1",
     "concat-stream": "^2.0.0",
     "conventional-changelog-conventionalcommits": "^4.6.3",
-    "eslint": "^7.32.0",
+    "eslint": "^8.10.0",
     "graceful-fs": "^4.2.9",
     "semantic-release": "^19.0.2",
     "tape": "^5.4.1",
