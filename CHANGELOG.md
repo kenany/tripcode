@@ -1,3 +1,10 @@
+### [2.0.1](https://github.com/KenanY/tripcode/compare/2.0.0...2.0.1) (2022-03-27)
+
+
+### Bug Fixes
+
+* **deps:** minimist@1.2.6 ([758cbef](https://github.com/KenanY/tripcode/commit/758cbef58fea1625c05634b93ca7b792cc618f0f))
+
 ## [2.0.0](https://github.com/KenanY/tripcode/compare/1.4.0...2.0.0) (2021-11-05)
 
 
