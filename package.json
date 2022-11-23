@@ -32,7 +32,7 @@
     "test": "tape test/index.js"
   },
   "dependencies": {
-    "minimist": "^1.2.6",
+    "minimist": "^1.2.7",
     "split": "^1.0.1"
   },
   "devDependencies": {
