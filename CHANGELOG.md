@@ -1,3 +1,14 @@
+## [3.0.0](https://github.com/KenanY/tripcode/compare/2.0.1...3.0.0) (2022-11-23)
+
+
+### ⚠ BREAKING CHANGES
+
+* Node.js v12 is no longer supported.
+
+### Features
+
+* drop Node.js v12 support ([0f70e98](https://github.com/KenanY/tripcode/commit/0f70e98401aa8e0f9a8f12b59527fcc02c7d1701))
+
 ### [2.0.1](https://github.com/KenanY/tripcode/compare/2.0.0...2.0.1) (2022-03-27)
 
 
