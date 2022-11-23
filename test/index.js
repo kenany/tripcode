@@ -1,4 +1,3 @@
-const forEach = require('lodash.foreach');
 const utf8 = require('utf8');
 const test = require('tape');
 
@@ -13,7 +12,7 @@ test('huge list of tripcodes (19233 assertions)', function(t) {
     t.plan(1);
 
     let failed = [];
-    forEach(tripcodes, function(trip) {
+    tripcodes.forEach((trip) => {
       const actual = tripcode(trip[0]);
       const expected = trip[1];
       failed = [actual, expected];
@@ -62,7 +61,7 @@ test('anything not alphanumeric', function(t) {
 
   t.plan(SYMBOLS.length);
 
-  forEach(SYMBOLS, function(trip) {
+  SYMBOLS.forEach((trip) => {
     t.equal(tripcode(trip[0]), trip[1]);
   });
 });
@@ -74,7 +73,7 @@ test('symbols that are ignored', function(t) {
 
   t.plan(SYMBOLS.length);
 
-  forEach(SYMBOLS, function(trip) {
+  SYMBOLS.forEach((trip) => {
     t.equal(tripcode(trip), '');
   });
 });

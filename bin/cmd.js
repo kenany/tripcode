@@ -2,7 +2,6 @@
 
 const argv = require('minimist')(process.argv.slice(2));
 const split = require('split');
-const forEach = require('lodash.foreach');
 
 const tripcode = require('../');
 
@@ -20,5 +19,5 @@ if (!process.stdin.isTTY) {
 
 // Password(s) passed as argument(s).
 else {
-  forEach(argv._, tripify);
+  argv._.forEach(tripify);
 }

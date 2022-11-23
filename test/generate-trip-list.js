@@ -1,6 +1,5 @@
 const concat = require('concat-stream');
 const fs = require('graceful-fs');
-const forEach = require('lodash.foreach');
 const path = require('path');
 
 module.exports = function(callback) {
@@ -8,7 +7,7 @@ module.exports = function(callback) {
     const trips = [];
 
     const lines = data.toString().split('\n');
-    forEach(lines, function(line) {
+    lines.forEach((line) => {
       const pair = line.split('!');
       if (pair[3]) {
         trips.push([pair[0], pair[1]]);
