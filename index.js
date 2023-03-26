@@ -7,6 +7,10 @@ var SALT_TABLE = '.............................................../0123456789A'
   + '..........................................................................'
   + '.................................................';
 
+/**
+ * @param {string} str
+ * @returns {string}
+ */
 function sjis(str) {
   var encoded = '';
   var index = -1;
@@ -18,6 +22,10 @@ function sjis(str) {
   return encoded;
 }
 
+/**
+ * @param {string} key
+ * @returns {string}
+ */
 module.exports = function(key) {
   key = sjis(key);
   key = htmlEscape(key);

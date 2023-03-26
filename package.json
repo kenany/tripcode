@@ -16,10 +16,11 @@
     "tripcode": "bin/cmd.js"
   },
   "main": "index.js",
-  "types": "types.d.ts",
+  "types": "index.d.ts",
   "files": [
     "bin",
     "lib",
+    "index.d.ts",
     "index.js"
   ],
   "engines": {
