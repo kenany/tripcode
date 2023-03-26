@@ -1,3 +1,10 @@
+## [3.0.3](https://github.com/KenanY/tripcode/compare/3.0.2...3.0.3) (2023-03-26)
+
+
+### Bug Fixes
+
+* include TS types in published package ([b014f46](https://github.com/KenanY/tripcode/commit/b014f46f55ff5b8496bc7ffc0017b78f0f28925e))
+
 ## [3.0.2](https://github.com/KenanY/tripcode/compare/3.0.1...3.0.2) (2023-02-18)
 
 
