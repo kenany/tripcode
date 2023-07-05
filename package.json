@@ -41,7 +41,7 @@
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "concat-stream": "^2.0.0",
-    "conventional-changelog-conventionalcommits": "^5.0.0",
+    "conventional-changelog-conventionalcommits": "^6.1.0",
     "eslint": "^8.43.0",
     "graceful-fs": "^4.2.11",
     "semantic-release": "^21.0.5",
