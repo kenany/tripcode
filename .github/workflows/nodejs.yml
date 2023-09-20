@@ -1,11 +1,13 @@
 name: nodejs
-on: [pull_request, push]
+on: [push, pull_request, merge_group]
+permissions:
+  contents: read
 jobs:
   build:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        node-version: [14, 16, 18]
+        node-version: [18, 20]
         os: [ubuntu-latest]
     steps:
     - name: Node.js ${{ matrix.node-version }}
