@@ -1,3 +1,14 @@
+## [4.0.0](https://github.com/kenany/tripcode/compare/3.0.3...4.0.0) (2023-09-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* Node.js v14 and v16 are no longer supported.
+
+### Features
+
+* drop Node.js v14 and v16 support ([4db365f](https://github.com/kenany/tripcode/commit/4db365f0b2f2808b31732085556af273b16e6d10))
+
 ## [3.0.3](https://github.com/KenanY/tripcode/compare/3.0.2...3.0.3) (2023-03-26)
 
 
