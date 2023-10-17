@@ -37,7 +37,7 @@
     "split": "^1.0.1"
   },
   "devDependencies": {
-    "@kenan/eslint-config": "^11.0.1",
+    "@kenan/eslint-config": "^11.0.2",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "concat-stream": "^2.0.0",
