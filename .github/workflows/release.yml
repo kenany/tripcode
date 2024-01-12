@@ -26,7 +26,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4.1.1
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1.8.36
+        uses: bahmutov/npm-install@v1.8.37
         with:
           useLockFile: false
       - run: npm audit signatures
