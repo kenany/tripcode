@@ -20,7 +20,7 @@ jobs:
         npm --version
     - uses: actions/checkout@v4.1.1
     - name: Install dependencies
-      uses: bahmutov/npm-install@v1.8.37
+      uses: bahmutov/npm-install@v1.8.38
       with:
         useLockFile: false
     - run: npm ls
