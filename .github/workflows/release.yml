@@ -24,7 +24,7 @@ jobs:
           npm install -g npm
           npm --version
       - name: Checkout code
-        uses: actions/checkout@v4.1.5
+        uses: actions/checkout@v4.1.6
       - name: Install dependencies
         uses: bahmutov/npm-install@v1.10.2
         with:
