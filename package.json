@@ -45,7 +45,7 @@
     "eslint": "^8.57.0",
     "graceful-fs": "^4.2.11",
     "semantic-release": "^24.1.2",
-    "tape": "^5.8.1",
+    "tape": "^5.9.0",
     "utf8": "^3.0.0"
   }
 }
