@@ -18,9 +18,9 @@ jobs:
       run: |
         npm install -g npm
         npm --version
-    - uses: actions/checkout@v5.0.0
+    - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
     - name: Install dependencies
-      uses: bahmutov/npm-install@v1.11.1
+      uses: bahmutov/npm-install@4488656f8e90d3c85e3a964db0018dd624f340e7 # v1.11.1
       with:
         useLockFile: false
     - run: npm ls
