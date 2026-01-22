@@ -24,7 +24,7 @@ jobs:
           npm install -g npm
           npm --version
       - name: Checkout code
-        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
       - name: Install dependencies
         uses: bahmutov/npm-install@3e063b974f0d209807684aa23e534b3dde517fd9 # v1.11.2
         with:
